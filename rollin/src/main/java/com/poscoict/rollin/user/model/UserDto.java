@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Data
 @Component
-public class UserDTO {
+public class UserDto {
 
     private Integer id;
     private String userId;

@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.poscoict.rollin.user.repo.UserMapper">
-    <select id="getAllUser" resultType="PaperDto">
+    <select id="getAllUser" resultType="UserDto">
         SELECT id, userId,
                password,
                name, img, pcnt
@@ -13,7 +13,7 @@
     </select>
 
 
-    <insert id="insertUser" parameterType="PaperDto">
+    <insert id="insertUser" parameterType="UserDto">
         Insert Into
         users(userId, password, name)
         VALUES
